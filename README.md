@@ -5,8 +5,7 @@ Monitor Raspberry Pi boot messages and system logs on a 1.3" OLED display connec
 
 | Video | Image |
 |-------|-------|
-| <video src="https://github.com/user-attachments/assets/1a46b877-9e1a-4482-9ac9-8114ff20dad5
-" width="250" controls></video> | <img src="https://github.com/user-attachments/assets/1d248a58-322e-4a23-ad29-81f45b68591d" width="250"> |
+| <video src="https://github.com/user-attachments/assets/1a46b877-9e1a-4482-9ac9-8114ff20dad5" width="250" controls></video> | <img src="https://github.com/user-attachments/assets/1d248a58-322e-4a23-ad29-81f45b68591d" width="250"> |
 
 
 ## Hardware Requirements
