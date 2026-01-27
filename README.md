@@ -1,3 +1,4 @@
+
 # Raspberry Pi to Pico UART Console Monitor with OLED Display
 
 Monitor Raspberry Pi boot messages and system logs on a 1.3" OLED display connected to a Raspberry Pi Pico.
@@ -6,7 +7,7 @@ Monitor Raspberry Pi boot messages and system logs on a 1.3" OLED display connec
 
 - Raspberry Pi
 - Raspberry Pi Pico (with CircuitPython installed)
-- 1.3" OLED Display (128x64, I2C, SH1106 or SSD1306)
+- 1.3" OLED Display (128x64, I2C,  SSD1306)
 - USB to Serial adapter (3.3V logic)
 - Jumper wires
 
@@ -14,16 +15,17 @@ Monitor Raspberry Pi boot messages and system logs on a 1.3" OLED display connec
 
 ### OLED to Pico
 ```
-VCC → 3.3V (Pin 36)
-GND → GND (Pin 38)
-SCL → GP5 (Pin 7)
-SDA → GP4 (Pin 6)
+VCC → 3.3V
+GND → GND
+SCL → GP5
+SDA → GP4
 ```
 
 ### USB-Serial to Pico
 ```
-TX  → GP1 (Pin 2)
-GND → GND (Pin 38)
+USB-Serial TX → Pico GP1 (RX)
+USB-Serial RX → Pico GP0 (TX) [optional - not needed for monitoring]
+GND           → GND
 ```
 
 Plug USB-serial adapter into Raspberry Pi USB port.
@@ -31,7 +33,7 @@ Plug USB-serial adapter into Raspberry Pi USB port.
 ## Pico Setup
 
 1. Install `adafruit_framebuf` library to `lib` folder
-2. Copy `code.py` to CIRCUITPY drive (uses 115200 baud)
+2. Copy the console monitor script to CIRCUITPY drive (uses 115200 baud)
 
 ## Raspberry Pi Setup
 
@@ -99,7 +101,7 @@ ExecStart=/bin/sh -c 'dmesg && journalctl -f -p err'
 
 ## Configuration
 
-Edit `code.py` for display settings:
+Edit the Pico script for display settings:
 ```python
 MAX_LINES = 8              # Lines to display
 MAX_CHARS_PER_LINE = 21    # Characters per line
@@ -107,7 +109,7 @@ MAX_CHARS_PER_LINE = 21    # Characters per line
 
 Change baud rate (update both files):
 ```python
-# code.py
+# Pico script
 uart = busio.UART(board.GP0, board.GP1, baudrate=9600, timeout=0)
 ```
 ```bash
@@ -117,8 +119,3 @@ console=ttyUSB0,9600 ...
 # service file
 ExecStartPre=/bin/stty -F /dev/ttyUSB0 9600 cs8 -cstopb -parenb
 ```
-
-## License
-
-MIT License
-
