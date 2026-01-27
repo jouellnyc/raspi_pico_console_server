@@ -25,7 +25,7 @@ SCL → GP5
 SDA → GP4
 ```
 
-### USB-Serial to Pico
+### Raspberry Pi's USB-Serial to Pico
 ```
 USB-Serial TX → Pico GP1 (RX)
 USB-Serial RX → Pico GP0 (TX) [optional - not needed for monitoring]
@@ -39,7 +39,7 @@ Plug USB-serial adapter into Raspberry Pi USB port.
 
 Gotten from https://github.com/adafruit/Adafruit_CircuitPython_framebuf
 
-2. Copy all files in this repo /.
+2. Copy all files in this repo to  /.
 
 ## Raspberry Pi Setup
 
