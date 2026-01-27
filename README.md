@@ -3,6 +3,10 @@
 
 Monitor Raspberry Pi boot messages and system logs on a 1.3" OLED display connected to a Raspberry Pi Pico.
 
+
+https://github.com/user-attachments/assets/fc41c53e-35ce-4fe2-bd94-00250422207f
+
+
 ## Hardware Requirements
 
 - Raspberry Pi
