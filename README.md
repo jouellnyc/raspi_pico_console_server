@@ -7,7 +7,7 @@ Monitor Raspberry Pi boot messages and system logs on a 1.3" OLED display connec
 
 - Raspberry Pi
 - Raspberry Pi Pico (with CircuitPython installed)
-- 1.3" OLED Display (128x64, I2C,  SSD1306)
+- 1.3" OLED Display (128x64, I2C, SH1106)
 - USB to Serial adapter (3.3V logic)
 - Jumper wires
 
@@ -32,8 +32,8 @@ Plug USB-serial adapter into Raspberry Pi USB port.
 
 ## Pico Setup
 
-1. Install `adafruit_framebuf` library to `lib` folder
-2. Copy the console monitor script to CIRCUITPY drive (uses 115200 baud)
+1. Install `adafruit_framebuf` library to `lib` folder (shared here for ease)
+2. Copy the console monitor script to CIRCUITPY drive (uses 115200 baud) - console_oled_lrap_13 is spefically for the 1.3 inch SH1106 - the others will work with .96 inch SSD1036.
 
 ## Raspberry Pi Setup
 
