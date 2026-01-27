@@ -48,13 +48,15 @@ Plug USB-serial adapter into Raspberry Pi USB port.
 
 2. Edit kernel command line to add console output:
    ```bash
-   sudo nano /boot/firmware/cmdline.txt
+   /boot/firmware/cmdline.txt
    ```
    
    Add `console=ttyUSB0,115200` at the beginning of the line:
    ```
    console=ttyUSB0,115200 console=tty1 root=PARTUUID=...
    ```
+
+   Also in ```/boot/firmware/config.txt``` add enable_uart=1
 
 3. Create service file:
    ```bash
