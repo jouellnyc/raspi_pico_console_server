@@ -33,7 +33,7 @@ Plug USB-serial adapter into Raspberry Pi USB port.
 ## Pico Setup
 
 1. Install `adafruit_framebuf` library to `lib` folder (shared here for ease)
-2. Copy the console monitor script to CIRCUITPY drive (uses 115200 baud) - console_oled_lrap_13 is spefically for the 1.3 inch SH1106 - the others will work with .96 inch SSD1036.
+2. Copy the console monitor script / font to CIRCUITPY drive (uses 115200 baud) - console_oled_lrap_13 is spefically for the 1.3 inch SH1106 - the others will work with .96 inch SSD1036.
 
 ## Raspberry Pi Setup
 
