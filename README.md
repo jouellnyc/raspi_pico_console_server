@@ -100,7 +100,7 @@ logger "Your message"
 echo "Test" > /dev/ttyUSB0
 ```
 
-Filter messages in service file:
+Consider to filter messages in service file:
 ```bash
 # Errors only
 ExecStart=/bin/sh -c 'dmesg && journalctl -f -p err'
