@@ -107,7 +107,7 @@ ExecStart=/bin/sh -c 'dmesg && journalctl -f -p err'
 
 ## Configuration
 
-Edit the Pico script for display settings:
+Edit the Pico script for display settings (Examples):
 ```python
 MAX_LINES = 8              # Lines to display
 MAX_CHARS_PER_LINE = 21    # Characters per line
