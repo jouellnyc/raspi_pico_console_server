@@ -92,8 +92,9 @@ Plug USB-serial adapter into Raspberry Pi USB port.
    ```
 
 ## Usage
+After rebooting, it should 'just work'
 
-Send messages:
+Test Sending messages:
 ```bash
 logger "Your message"
 echo "Test" > /dev/ttyUSB0
