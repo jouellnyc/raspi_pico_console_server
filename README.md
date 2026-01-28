@@ -1,7 +1,7 @@
 
 # Raspberry Pi to Pico UART Console Monitor with OLED Display
 
-Monitor Raspberry Pi boot messages and system logs on a 1.3" OLED display connected to a Raspberry Pi Pico.
+Active and Passive Raspberry Pi boot messages monitor using a Pico and 1.3" display. 
 
 | Image |
 
