@@ -12,6 +12,15 @@ Monitor Raspberry Pi boot messages and system logs on a 1.3" OLED display connec
 <img src="https://github.com/user-attachments/assets/1d248a58-322e-4a23-ad29-81f45b68591d" width="175" height="175">
 
 
+## Features
+✅ Shows scrolling boot logs when the Pi boots/reboots
+✅ Auto-detects reboots and switches to boot mode instantly
+✅ Auto-logs in after boot completes
+✅ Displays live status (date, host, uptime, load, temp, memory, disk)
+✅ Updates status every 5 minutes automatically
+✅ Word-wraps long boot messages to fit the tiny OLED
+✅ Configurable scroll speed for boot logs
+
 ## Hardware Requirements
 
 - Raspberry Pi
