@@ -7,8 +7,9 @@ Monitor Raspberry Pi boot messages and system logs on a 1.3" OLED display connec
 
 <img src="https://github.com/user-attachments/assets/1d248a58-322e-4a23-ad29-81f45b68591d" width="175" height="175">
 
-
-<video width="50%" src="https://github.com/user-attachments/assets/daa9cc80-3651-4ce9-af37-3f2594b46f7f"></video>
+<video width="400" controls>
+  <source src="https://github.com/user-attachments/assets/daa9cc80-3651-4ce9-af37-3f2594b46f7f" type="video/mp4">
+</video>
 
 ## Features
 ✅ Shows scrolling boot logs when the Pi boots/reboots
